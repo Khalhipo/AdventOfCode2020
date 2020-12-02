@@ -2,6 +2,7 @@ var num_pass_ok = 0;
 var contador = 0;
 
 //Part 1
+
 function recuperarPasswords(array_input){
    for(var i = 0; i<array_input.length-1;i++){
     var input_formatted = format_input(array_input[i]);
@@ -45,8 +46,6 @@ function format_input(array_input){
 
 
 //Part 2
-var prueba2 = ["1-3 a: abcde","1-3 b: cdefg","2-9 c: ccccccccc"];
-var array_input_ok = [];
 
 function recuperarPasswords2(array_input){
    for(var i = 0; i<array_input.length-1;i++){
