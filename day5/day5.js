@@ -67,10 +67,9 @@ function calcularIdMio(array_input){
     function comparar (a,b){ return a - b; }
     array_id_sort = array_id.sort(comparar);
     
-    for(var i = 1; i<array_id_sort.length-1; i++){
+    for(var i = 1; i<array_id_sort.length; i++){
         
-       if((array_id_sort[i]!=(array_id_sort[i-1])+1) ||
-       (array_id_sort[i]!=array_id_sort[i+1]-1)){
+       if((array_id_sort[i]!=(array_id_sort[i-1])+1)){
             id_mia = array_id_sort[i-1]+1;
        } 
         
