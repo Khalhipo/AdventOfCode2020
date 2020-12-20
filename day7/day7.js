@@ -79,8 +79,6 @@ function getTreeColor(color){
 console.log(countColors(colors));
 
 //Part 2
-var numChildren = 0;
-
 function countBags(colors){
     let libColors = getLibColors2(colors);
     return getNumBagsDirect(libColors, "shiny gold");
@@ -88,7 +86,7 @@ function countBags(colors){
 
 function getNumBagsDirect(libColors,color){
     var childrenDirect = libColors.get(color);
-    numChildren = 0;
+    var numChildren = 0;
 
    for(let child of childrenDirect){
       numChildren += parseInt(child[1]) + parseInt(child[1]) * parseInt(getNumBagsDirect(libColors,child[0]));
